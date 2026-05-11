@@ -33,3 +33,10 @@ searchBtn.addEventListener("click", async function () {
     notFound.innerText = "Something Went Error";
   }
 });
+
+// for enter button
+document.addEventListener("keydown",(e)=>{
+    if(e.key==="Enter"){
+        searchBtn.click();
+    }
+})
