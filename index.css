@@ -1,0 +1,231 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./netflix.png");
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* eb0f9d26 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .navbar {
+        padding: 0px 10px;
+        height: 70px;
+    }
+}
+
+.navbar p {
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@media(max-width:768px) {
+    .navbar p {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+}
+
+/* for ancor */
+.navbar a {
+    text-decoration: none;
+    padding: 0px 5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+@media(max-width:768px) {
+    .navbar a {
+        padding: 0px 3px;
+        font-size: 15px;
+    }
+}
+
+.navbar a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* for select */
+#selection {
+    border-radius: 5px;
+    background: black;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+@media(max-width:768px) {
+    #selection {
+        border-radius: 3px;
+        font-size: 13px;
+    }
+}
+
+/* for two button */
+#btn {
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width:768px) {
+    #btn {
+        gap: 10px;
+    }
+}
+
+#btn #loginBtn,
+#signupBtn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+
+    #btn #loginBtn,
+    #signupBtn {
+        padding: 5px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+}
+
+#btn #loginBtn {
+    background: red;
+}
+
+#btn #signupBtn {
+    background: black;
+}
+
+/* container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 145px;
+}
+
+@media(max-width:768px) {
+    .container {
+        margin-top: 100px;
+    }
+}
+
+.container h1 {
+    margin: 15px 0px;
+}
+
+/* search box */
+.searchBox {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:768px) {
+    .searchBox {
+        gap: 4px;
+    }
+}
+
+/* searchBox input */
+.searchBox #inputBox {
+    background-color: transparent;
+    border: 2px solid #8B5CF6;
+    padding: 13px;
+    width: 500px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+@media(max-width:780px) {
+    .searchBox #inputBox {
+        padding: 10px;
+        width: 210px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+}
+
+.searchBox #inputBox:hover {
+    border: 1px solid rgb(153, 23, 23);
+}
+
+/* container button */
+.searchBox #searchBtn {
+    padding: 15px;
+    background: rgb(231, 13, 13);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+}
+
+@media(max-width:768px) {
+    .searchBox #searchBtn {
+        padding: 12px;
+        font-size: 13px;
+        border-radius: 6px;
+    }
+}
+
+#movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.movie-card {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* movie-card img */
+.movie-card img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+@media(max-width:786px) {
+    .movie-card img {
+     height: 250px;
+     width: 250px;
+    }
+}
+
+.movie-card p {
+    display: inline-block;
+    font-size: 20px;
+}
